@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love - Her Appearance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="love-title">My Love</h1>
+        <a href="index.html" class="back-button">Back to Main</a>
+    </header>
+
+    <main class="page" id="appearance">
+        <h2>Her Appearance</h2>
+
+        <section>
+            <h3>Her Eyes</h3>
+            <p>Her eyes are pretty reallylyyy pretty ( though she keeps denying it >:( ). They always seem to make me fall for her even more.</p>
+            <img src="Images/eyes.png" alt="Her eyes">
+        </section>
+
+        <section>
+            <h3>Her Smile</h3>
+            <p>Her smile is cutest and the funniest it always makes me laugh and smile back everytime i see her smiling.</p>
+            <img src="Images/image.png" alt="Her smile">
+        </section>
+
+        <section>
+            <h3>Her Hair</h3>
+            <p>Her hair color is blackish/darkbrownish , soft and flowing like a waterfall. It always looks perfect, whether frizzy, unwashed, styled, or natural.</p>
+            <img src="Images/Hair.png" alt="Her hair">
+        </section>
+
+        <section>
+            <h3>Her Style</h3>
+            <p>Her style suits her alot she def got that fashion sense ( i havent seen that many pics of her but i just know she rocks all of em ).</p>
+            <img src="Images/style.png" alt="Her style">
+        </section>
+
+        <section>
+            <h3>Her Evil Cuteness</h3>
+            <p>She is the most cute, gorjes, bootyful woman i've seen her cuteness makes her irresistible ( shes very evil too even though she might not look it ( source : trust me )).</p>
+            <img src="Images/EvilCuteness.png" alt="Her Evil Cuteness">
+        </section>
+    </main>
+
+    <script>
+        // Page transitions using Circle Zoom/Fade In animation
+        const pages = document.querySelectorAll('.page');
+        const backButton = document.querySelector('.back-button');
+
+        pages.forEach(page => {
+            page.addEventListener('click', (event) => {
+                event.preventDefault();
+                const nextPage = document.getElementById(event.target.href.slice(1));
+
+                nextPage.classList.add('active');
+                nextPage.classList.add('fadeIn');
+
+                setTimeout(() => {
+                    nextPage.classList.remove('fadeIn');
+                }, 500);
+            });
+        });
+
+        backButton.addEventListener('click', () => {
+            // Remove the event.preventDefault() statement
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+    /* Styles for the overall body and general elements */
+
+    body {
+        background-image: url("Images/HeartsBackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #f0f0f0;
+        position: relative;
+        font-family: sans-serif;
+    }
+    
+    /* Styles for the main title "My Love" */
+    
+    .love-title {
+        color: darkred;
+        text-align: center;
+        font-size: 3rem; /* Increased font size */
+        margin-top: 50px;
+    }
+    
+    /* Styles for the navigation section */
+    
+    .subtopics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .subtopic {
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.6rem;
+        background-color: #f5e6ea; /* Light pink background */
+        color: #000; /* Black text */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        cursor: pointer; /* Make subtopics clickable */
+        position: relative;
+        text-decoration: none; /* Remove underline */
+    }
+    
+    .subtopic img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .subtopic:hover {
+        background-color: #f5989d; /* Light purple background on hover */
+    }
+    
+    /* Styles for the page content */
+    
+    .page h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2rem; /* Increased font size */
+        margin-top: 50px;
+    }
+
+    /* Styles for the pages */
+    .page p {
+        text-align: left;
+        font-size: large; /* Increased font size */
+    }
+
+    .page h3 {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    
+    .page img { /* Added .appearance class to make the selector more specific */
+        width: 100px; /* Set the desired width for images in appearance section */
+        height: 100px; /* Set the desired height for images in appearance section */
+      }
+
+    .page {
+        display: flex;
+        flex-direction: column; /* This will arrange the child elements in a column */
+        align-items: left; /* This will center the child elements horizontally */
+      }
+      
+    .text-box {
+        display: inline-block;
+        width: 100%; /* This will make the text box fill the entire width of the page */
+        max-width: 800px; /* This will set a maximum width for the text box */
+        margin: 0 auto; /* This will center the text box horizontally */
+        background-color: #f6e2e76f;
+        padding: 20px;
+        border-radius: 10px solid #ccc;
+        box-shadow: 0 2px 5px rgba(77, 53, 53, 0.2);
+      }
+      
+    
+    /* Styles for the "About Me" section */
+    
+    .about-me {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-me p {
+        font-size: 2rem;
+    }
+    
+    .about-me img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    /* Back Button Styles */
+    
+    .back-button {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #ccc;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .back-button:hover {
+        background-color: #ddd;
+    }
+      
+      .locked-section {
+        text-align: center;
+        padding: 50px;
+      }
+      
+      .locked-message {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      
+      .lock-emoji {
+        font-size: 3rem;
+        vertical-align: middle;
+      }
+      
+      .unlock-date {
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.6rem;
+        background-color: #8a0404c1; /* Light pink background */
+        color: #000000; /* Black text */
+        box-shadow: 0px 2px 5px rgba(128, 4, 4, 0.2); /* Subtle shadow for depth */
+      }
+
+      .unlock-date:hover {
+        background-color: #831f1fcf;
+      }
+      
+      .hidden-content {
+        display: inline-block;
+        font-size: 1.6rem;
+        width: 150px; /* This will make the text box fill the entire width of the page */
+        max-width: 800px; /* This will set a maximum width for the text box */
+        margin: 0 auto; /* This will center the text box horizontally */
+        color: #000000;
+        background-color: #e7adbb6f;
+        padding: 90px;
+        border-radius: 10px solid #ccc;
+        box-shadow: 0 2px 5px rgba(77, 53, 53, 0.2);
+        display: none; /* Initially hide the unlocked content */
+      }
+      
